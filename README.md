@@ -1,6 +1,6 @@
 # flutter_dev_book_about_key
 
-A new Flutter project.
+書籍「Flutter実践開発」第9章の３節の内容に基づくものです。
 
 ## Getting Started
 
