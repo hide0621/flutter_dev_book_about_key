@@ -33,6 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
         /// この書き方ならStateのインデックスが変わる
         children: list.map((element) {
           return ListItem(
+            /// ValueKey : コンストラクタ引数に与えられた値で識別するKey
             key: ValueKey(element),
             widgetIndex: element,
           );
