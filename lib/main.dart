@@ -24,8 +24,16 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         /// この書き方だとStateのインデックスは変わらない
+        // children: list.map((element) {
+        //   return ListItem(
+        //     widgetIndex: element,
+        //   );
+        // }).toList(),
+
+        /// この書き方ならStateのインデックスが変わる
         children: list.map((element) {
           return ListItem(
+            key: ValueKey(element),
             widgetIndex: element,
           );
         }).toList(),
