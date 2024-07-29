@@ -23,6 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('Home Screen'),
       ),
       body: Column(
+        /// この書き方だとStateのインデックスは変わらない
         children: list.map((element) {
           return ListItem(
             widgetIndex: element,
